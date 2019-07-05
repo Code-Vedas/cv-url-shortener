@@ -1,0 +1,14 @@
+{
+  "name": "urlshortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nitesh Purohit <nitesh.purohit.it@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.478.0"
+  }
+}

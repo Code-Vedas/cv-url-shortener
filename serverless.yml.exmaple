@@ -1,0 +1,55 @@
+service: UrlShortener
+custom:
+  bucket: BUCKET_NAME
+  default_redirect_url: DEFAULT_REDIRECT_URL
+  short_code_length: SHORT_CODE_LENGTH
+  base_url: BASE_URL
+  api_key: API_KEY_NAME
+  stage: production
+  profile: PROFILE_NAME
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  profile: ${self:custom.profile}
+  stage: ${self:custom.stage}
+  region: us-east-1
+  apiKeys:
+    - ${self:custom.api_key}
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+        - s3:PutObjectAcl
+        - s3:ListBucket
+        - s3:GetObject
+      Resource:
+        - 'arn:aws:s3:::${self:custom.bucket}/*'
+        - 'arn:aws:s3:::${self:custom.bucket}'
+functions:
+  index:
+    handler: src/handler.index
+    environment:
+      BUCKET: ${self:custom.bucket}
+      DEFAULT_REDIRECT_URL: ${self:custom.default_redirect_url}
+    description: Url Request comes here.
+    events:
+      - http:
+          path: /{short_code}
+          method: get
+          request:
+            parameters:
+              paths:
+                short_code: true
+  create:
+    handler: src/handler.create
+    environment:
+      BUCKET: ${self:custom.bucket}
+      SHORT_CODE_LENGTH: ${self:custom.short_code_length}
+      BASE_URL: ${self:custom.base_url}
+    description: Url Request comes here.
+    events:
+      - http:
+          path: /
+          method: post
+          private: true
