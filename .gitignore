@@ -80,9 +80,11 @@ typings/
 
 # Serverless directories
 .serverless/
+dist/
 
 # FuseBox cache
 .fusebox/
 
 # DynamoDB Local files
 .dynamodb/
+.yarn/

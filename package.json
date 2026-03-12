@@ -1,14 +1,35 @@
 {
-  "name": "urlshortener",
-  "version": "1.0.0",
-  "description": "URL Shortner",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Nitesh Purohit <nitesh.purohit.it@gmail.com>",
+  "name": "cv-url-shortener",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Serverless AWS Lambda URL shortener backed by S3.",
   "license": "ISC",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
   "dependencies": {
-    "aws-sdk": "^2.1693.0"
+    "@aws-sdk/client-s3": "^3.884.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "@types/aws-lambda": "^8.10.152",
+    "@types/node": "^24.5.2",
+    "@typescript-eslint/eslint-plugin": "^8.43.0",
+    "@typescript-eslint/parser": "^8.43.0",
+    "esbuild": "^0.25.9",
+    "eslint": "^9.35.0",
+    "prettier": "^3.6.2",
+    "serverless": "^3.40.0",
+    "serverless-esbuild": "^1.55.1",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }

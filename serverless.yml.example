@@ -1,38 +1,63 @@
-service: UrlShortener
-custom:
-  bucket: BUCKET_NAME
-  default_redirect_url: DEFAULT_REDIRECT_URL
-  short_code_length: SHORT_CODE_LENGTH
-  base_url: BASE_URL
-  api_key: API_KEY_NAME
-  stage: production
-  profile: PROFILE_NAME
+service: cv-url-shortener
+frameworkVersion: "3"
+
+plugins:
+  - serverless-esbuild
+
+params:
+  default:
+    apiKeyName: url-shortener-production
+    baseUrl: https://sho.rt
+    bucket: your-shortener-bucket-name
+    defaultRedirectUrl: https://www.example.com
+    maxGenerationAttempts: 10
+    profile: default
+    region: us-east-1
+    shortCodeLength: 6
+    stage: production
 
 provider:
   name: aws
-  runtime: nodejs10.x
-  profile: ${self:custom.profile}
-  stage: ${self:custom.stage}
-  region: us-east-1
-  apiKeys:
-    - ${self:custom.api_key}
-  iamRoleStatements:
-    - Effect: Allow
-      Action:
-        - s3:PutObject
-        - s3:PutObjectAcl
-        - s3:ListBucket
-        - s3:GetObject
-      Resource:
-        - 'arn:aws:s3:::${self:custom.bucket}/*'
-        - 'arn:aws:s3:::${self:custom.bucket}'
+  runtime: nodejs20.x
+  profile: ${param:profile}
+  stage: ${param:stage}
+  region: ${param:region}
+  apiGateway:
+    apiKeys:
+      - ${param:apiKeyName}
+  environment:
+    BASE_URL: ${param:baseUrl}
+    BUCKET: ${param:bucket}
+    DEFAULT_REDIRECT_URL: ${param:defaultRedirectUrl}
+    MAX_GENERATION_ATTEMPTS: ${param:maxGenerationAttempts}
+    SHORT_CODE_LENGTH: ${param:shortCodeLength}
+  iam:
+    role:
+      statements:
+        - Effect: Allow
+          Action:
+            - s3:GetObject
+            - s3:HeadObject
+            - s3:PutObject
+          Resource:
+            - arn:aws:s3:::${param:bucket}
+            - arn:aws:s3:::${param:bucket}/*
+
+package:
+  individually: true
+
+custom:
+  esbuild:
+    bundle: true
+    minify: false
+    platform: node
+    sourcemap: true
+    target: node20
+
 functions:
-  index:
+  redirect:
     handler: src/handler.index
-    environment:
-      BUCKET: ${self:custom.bucket}
-      DEFAULT_REDIRECT_URL: ${self:custom.default_redirect_url}
-    description: Url Request comes here.
+    description: Redirect short URLs to their stored destination.
     events:
       - http:
           path: /{short_code}
@@ -43,11 +68,7 @@ functions:
                 short_code: true
   create:
     handler: src/handler.create
-    environment:
-      BUCKET: ${self:custom.bucket}
-      SHORT_CODE_LENGTH: ${self:custom.short_code_length}
-      BASE_URL: ${self:custom.base_url}
-    description: Url Request comes here.
+    description: Create short URLs for long destinations.
     events:
       - http:
           path: /
