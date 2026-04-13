@@ -27,7 +27,7 @@
     "esbuild": "^0.28.0",
     "eslint": "^10.2.0",
     "prettier": "^3.6.2",
-    "serverless": "^4.33.3",
+    "serverless": "^4.34.0",
     "serverless-esbuild": "^1.55.1",
     "typescript": "^5.9.2",
     "vitest": "^4.1.2"
