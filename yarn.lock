@@ -2819,7 +2819,7 @@ __metadata:
     esbuild: ^0.28.0
     eslint: ^10.2.0
     prettier: ^3.6.2
-    serverless: ^4.33.3
+    serverless: ^4.34.0
     serverless-esbuild: ^1.55.1
     typescript: ^5.9.2
     vitest: ^4.1.2
@@ -4613,16 +4613,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:^4.33.3":
-  version: 4.33.3
-  resolution: "serverless@npm:4.33.3"
+"serverless@npm:^4.34.0":
+  version: 4.34.0
+  resolution: "serverless@npm:4.34.0"
   dependencies:
     rimraf: 5.0.10
     undici: 6.24.1
   bin:
     serverless: run.js
     sls: run.js
-  checksum: 93bfebd7f507b577726df96edfa41314dc96f81a7a050123af7fdb9eb0d31f06fe6ec4c16234473bef2a96a06c6f0fcf2c0f66b8b3fd72f752548ae09206776f
+  checksum: c0ee162e47852e87bb8171313a043f4acb561cb8c5f5464f180d86ab5d368c0c934a4978b9b7812299e2130b20c6bfdedde237a2838378f9bf5a25b4d2c2e05c
   languageName: node
   linkType: hard
 
