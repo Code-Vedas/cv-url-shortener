@@ -2829,7 +2829,7 @@ __metadata:
     esbuild: ^0.28.0
     eslint: ^10.2.1
     prettier: ^3.8.3
-    serverless: ^4.34.0
+    serverless: ^4.35.0
     serverless-esbuild: ^1.57.1
     typescript: ^6.0.3
     vitest: ^4.1.5
@@ -4624,16 +4624,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless@npm:^4.34.0":
-  version: 4.34.0
-  resolution: "serverless@npm:4.34.0"
+"serverless@npm:^4.35.0":
+  version: 4.35.0
+  resolution: "serverless@npm:4.35.0"
   dependencies:
     rimraf: 5.0.10
-    undici: 6.24.1
+    undici: 6.25.0
   bin:
     serverless: run.js
     sls: run.js
-  checksum: c0ee162e47852e87bb8171313a043f4acb561cb8c5f5464f180d86ab5d368c0c934a4978b9b7812299e2130b20c6bfdedde237a2838378f9bf5a25b4d2c2e05c
+  checksum: 236e6d9072285fd0f1fb26bd4a38c5a5817688a09870213e088bf46416fa27cf5a87eedf4b17c8a6daf152d8ca54ccf2ee01d2fa0afcdf86641c5396361bb2c6
   languageName: node
   linkType: hard
 
@@ -4929,7 +4929,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici@npm:6.24.1, undici@npm:^6.19.7":
+"undici@npm:6.25.0":
+  version: 6.25.0
+  resolution: "undici@npm:6.25.0"
+  checksum: aed372e1b0f16045696c878e46b03e97dfd1c6dd650fb2355d48adeecc730c990ab15ab2de5a5855dbfe04c9af403a3d4f702234d3e25e72c475d1fb3a72fcfe
+  languageName: node
+  linkType: hard
+
+"undici@npm:^6.19.7":
   version: 6.24.1
   resolution: "undici@npm:6.24.1"
   checksum: 0baa81ede2b0deb9002692c4d614cdffb2c8c27bb41e4ce7380f95b4468ebb6fd9745b7a6da32b0cdf05b1554bd5e5a47a80babb0e5ca9d59401efe372d975ed
