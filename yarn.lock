@@ -87,9 +87,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@aws-sdk/client-s3@npm:^3.1041.0":
-  version: 3.1041.0
-  resolution: "@aws-sdk/client-s3@npm:3.1041.0"
+"@aws-sdk/client-s3@npm:^3.1045.0":
+  version: 3.1045.0
+  resolution: "@aws-sdk/client-s3@npm:3.1045.0"
   dependencies:
     "@aws-crypto/sha1-browser": 5.2.0
     "@aws-crypto/sha256-browser": 5.2.0
@@ -146,7 +146,7 @@ __metadata:
     "@smithy/util-utf8": ^4.2.2
     "@smithy/util-waiter": ^4.3.0
     tslib: ^2.6.2
-  checksum: b1330574362dafbe997202251f0142a015f0ddf924bd0ccfc39b869bd9902e81a93eb3cd21b33bf15835a0233499808ae0f4af7ace7dbe2897d5e34169ed2b84
+  checksum: ed5cd46ae61bf2c6e2e08ff0a64684892da664628a05e07db1af6a0424ec179ed09489f45cd463315c0c24b756c3231ad4f066648761a093e0b62573f2245e82
   languageName: node
   linkType: hard
 
@@ -2753,7 +2753,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cv-url-shortener@workspace:."
   dependencies:
-    "@aws-sdk/client-s3": ^3.1041.0
+    "@aws-sdk/client-s3": ^3.1045.0
     "@eslint/js": ^10.0.1
     "@types/aws-lambda": ^8.10.152
     "@types/node": ^25.6.0
