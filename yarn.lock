@@ -2053,7 +2053,7 @@ __metadata:
     eslint: ^10.4.0
     prettier: ^3.8.3
     serverless: ^4.36.1
-    serverless-esbuild: ^1.57.1
+    serverless-esbuild: ^1.57.2
     typescript: ^6.0.3
     vitest: ^4.1.5
   languageName: unknown
@@ -3811,9 +3811,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"serverless-esbuild@npm:^1.57.1":
-  version: 1.57.1
-  resolution: "serverless-esbuild@npm:1.57.1"
+"serverless-esbuild@npm:^1.57.2":
+  version: 1.57.2
+  resolution: "serverless-esbuild@npm:1.57.2"
   dependencies:
     "@effect/platform": ^0.65.5
     "@effect/platform-node": ^0.60.5
@@ -3837,7 +3837,7 @@ __metadata:
   peerDependenciesMeta:
     esbuild-node-externals:
       optional: true
-  checksum: 78e79c469f7983452456f1497c16ad156137bcdac2c61a6d5f5427ebed1e1a0880f802c73bc5c43bd3c1b7dd26a118c6873685b57788d42db24890921424b022
+  checksum: 437a082f696a1b8c6fcb1521dac63afc01a9f577beae76dc34229954632739c6117c6f2a1e75bbb5cca7e21e007d0d181df9b41ada33083b5729de3d58ac9a32
   languageName: node
   linkType: hard
 
