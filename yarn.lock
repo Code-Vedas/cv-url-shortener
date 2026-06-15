@@ -1356,12 +1356,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^25.9.1":
-  version: 25.9.1
-  resolution: "@types/node@npm:25.9.1"
+"@types/node@npm:^25.9.3":
+  version: 25.9.3
+  resolution: "@types/node@npm:25.9.3"
   dependencies:
     undici-types: ">=7.24.0 <7.24.7"
-  checksum: 1a18c731409b14d59cea90ada7f2949ebbd0acf8df5cdfc4e0a981e3fd3f1a9cdc547752b139167989e04c888c61aeac64c4519510b7edbe4d5f456b2975f12c
+  checksum: 78b30ba6812d330062ddff63e3f0b20ec4cadfc6f96380dc87988b5d67efc99a6ffbf117e638574bba5397527279c8f6b754784fae907a5b76bd69e315631f00
   languageName: node
   linkType: hard
 
@@ -2114,7 +2114,7 @@ __metadata:
     "@aws-sdk/client-s3": ^3.1053.0
     "@eslint/js": ^10.0.1
     "@types/aws-lambda": ^8.10.152
-    "@types/node": ^25.9.1
+    "@types/node": ^25.9.3
     "@typescript-eslint/eslint-plugin": ^8.61.0
     "@typescript-eslint/parser": ^8.59.3
     esbuild: ^0.28.0
