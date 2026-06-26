@@ -1248,10 +1248,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/aws-lambda@npm:^8.10.152":
-  version: 8.10.161
-  resolution: "@types/aws-lambda@npm:8.10.161"
-  checksum: 5044256ff9cf726331ea7dcd8fbb17f4050ad6c617ccd843ec75a7a2e2a0996b9149266c16db89224bf5f51a8a3cb4ca87500bb41bb88d9f708ebeb31c070537
+"@types/aws-lambda@npm:^8.10.162":
+  version: 8.10.162
+  resolution: "@types/aws-lambda@npm:8.10.162"
+  checksum: 2f33da335cdd091ac766a5f53b3ae375eab010649afa73f3240715a548ad804f409536aec9057c48bc1457ac913c0b3b63114921772b3b5f2e93e115511dc6e0
   languageName: node
   linkType: hard
 
@@ -2050,7 +2050,7 @@ __metadata:
   dependencies:
     "@aws-sdk/client-s3": ^3.1068.0
     "@eslint/js": ^10.0.1
-    "@types/aws-lambda": ^8.10.152
+    "@types/aws-lambda": ^8.10.162
     "@types/node": ^25.9.3
     "@typescript-eslint/eslint-plugin": ^8.61.0
     "@typescript-eslint/parser": ^8.61.1
