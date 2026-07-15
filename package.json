@@ -25,7 +25,7 @@
     "@typescript-eslint/eslint-plugin": "^8.62.0",
     "@typescript-eslint/parser": "^8.64.0",
     "esbuild": "^0.28.1",
-    "eslint": "^10.5.0",
+    "eslint": "^10.7.0",
     "prettier": "^3.9.1",
     "serverless": "^4.38.1",
     "serverless-esbuild": "^1.57.2",
