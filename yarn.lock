@@ -2055,7 +2055,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^8.62.0
     "@typescript-eslint/parser": ^8.61.1
     esbuild: ^0.28.1
-    eslint: ^10.5.0
+    eslint: ^10.7.0
     prettier: ^3.9.1
     serverless: ^4.38.1
     serverless-esbuild: ^1.57.2
@@ -2282,9 +2282,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^10.5.0":
-  version: 10.5.0
-  resolution: "eslint@npm:10.5.0"
+"eslint@npm:^10.7.0":
+  version: 10.7.0
+  resolution: "eslint@npm:10.7.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.8.0
     "@eslint-community/regexpp": ^4.12.2
@@ -2323,7 +2323,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: ba4154355defd36a38b3200c53a0190c50165d9d09821f99f88707a959ff913693dabd15e4cf4df2d63c24596cc6dd5f02635ca03b78d2cb618d9071d246bbf1
+  checksum: f07102501b3b68f006e1d89b34a101a519ecc55baf9fb65ccdffcb59ad25c29c11e6735d336ffa0182de47b74dc260d15e2967f5f0a63b217700738fb5b4b4d5
   languageName: node
   linkType: hard
 
