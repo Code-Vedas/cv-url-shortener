@@ -1872,7 +1872,7 @@ __metadata:
     "@typescript-eslint/parser": ^8.64.0
     esbuild: ^0.28.1
     eslint: ^10.8.0
-    prettier: ^3.9.5
+    prettier: ^3.9.6
     serverless: ^4.40.0
     serverless-esbuild: ^1.57.2
     typescript: ^6.0.3
@@ -3377,12 +3377,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.9.5":
-  version: 3.9.5
-  resolution: "prettier@npm:3.9.5"
+"prettier@npm:^3.9.6":
+  version: 3.9.6
+  resolution: "prettier@npm:3.9.6"
   bin:
     prettier: bin/prettier.cjs
-  checksum: a47508022818548392d02d8d7074c0af4440e1bcb288f912a29bcf82a863925b67a34e5ded63b0c09ede234811d1dc48f49d201633dd740d5e8ee1dd304d16e3
+  checksum: 3fb6a3b6462b05afb825697a3fdcdd9bd1480c11d10d655b7ddbcaf2560beb695caffbe155b5020466005aa06bff74a61ba9c16e602bff849331b62f5db26cdf
   languageName: node
   linkType: hard
 
